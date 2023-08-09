@@ -3,7 +3,7 @@ Save a selected URL to a text file (appending if the file exists)
 
 # Introduction
 
-Sometimes when browsing you want to save a URL quickly for future reference without creating a bookmark in your browser. That is what this workflow does. For simplicity it uses a simple plain text file (which will be created for you if it doesn't already exist) to which saved URLs will be appended. You select the location folder for that file in the workflow configuration opposite.
+Sometimes when browsing you want to save a URL quickly for future reference without creating a bookmark in your browser. That is what this workflow does. For simplicity it uses a simple plain text file (which will be created for you if it doesn't already exist) to which saved URLs will be appended. You select the location folder for that file in the workflow configuration.
 
 # Usage
 

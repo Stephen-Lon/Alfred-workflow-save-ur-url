@@ -25,7 +25,7 @@ If you type the keyword (selected in the workflow configuration) to open the Lin
 - the Links file will open in your default file editor (and the editor selected may depend, of course, on whether you have chosen to save in markdown or plain text);
 - you can hold down ⌘ while pressing ⏎ to create a *new* links file in your chosen format (effectively deleting any URLs you have previously saved to the file).
 
-- # Usage—viewing and opening saved links
+# Usage—viewing and opening saved links
 ## Warnings
 1. The ability to view and open saved links (i.e., without opening the `Links` file) is currently limited to a *plain text* `Links` file. It will *not* work if you use the option to save a *markdown* `Links` file.
 2. There is no error trapping if in this configuration you set the option to view URLs in a Firefox private window when you don't have the Firefox app...but then you wouldn't do that, would you? 😀

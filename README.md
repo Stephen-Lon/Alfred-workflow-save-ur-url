@@ -47,5 +47,3 @@ You will be warned if:
 
 # Acknowledgement
 I am indebted to @vitor on the Alfred forum for huge help with the script filter.
-
----

@@ -49,14 +49,3 @@ You will be warned if:
 I am indebted to @vitor on the Alfred forum for huge help with the script filter.
 
 ---
-**Version 2.0** 09/08/2023: added ability to use markdown as alternative to plain text; added ability to replace `Links` file with empty file (thus deleting previously saved URLs)—with acknowledgement to @Acidham for the ideas.
-**Version 2.01** 09/08/2023: corrected typos in configuration and ReadMe.
-**Version 2.1** 09/08/2023: added error trapping for when files do not exist.
-**Version 2.2** 10/08/2023: corrected conditional logic used when opening or replacing links file.
-**Version 2.21** 11/08/2023: very small improvement to layout of workflow.
-**Version 2.3** 11/08/2023: improved creation of new links file (with heading) and expanded ReadMe to cover opening of links file and creation of new links file.
-**Version 2.4** 12/08/2023: substantial re-write to provide for initial creation of headed file if none exists. Updated ReadMe and better grammar in error messages. Added warning when creating fresh `Links` file.
-**Version 3.0** 23/08/2023: added ability to search for URLs in `Links.txt` file and open selected link. Substantially updated ReadMe.
-**Version 3.01**: 23/08/2023: small amendment to prompt in search result.
-**Version 3.1**: 24/08/2023 (not released): extended to markdown `Links` files the ability to search for URLs and open selected link. Updated ReadMe.
-**Version 3.2** 27/08/2023: finally squashed bug that, on occasion, led to display of Alfred's fallback search results when searching Links file. Updated ReadMe.

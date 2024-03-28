@@ -1,5 +1,5 @@
-# Alfred-workflow-save-ur-url
-Save a selected URL to a text file (appending if the file exists). Updated for version 4.0.
+# Important note
+*Version 4.5 (and later) of this workflow requires Alfred 5.5 (and above).* It uses Alfred 5.5's Text View action. If you are not using Alfred 5.5 (or later) please install [version 4.1](https://github.com/Stephen-Lon/Alfred-workflow-save-ur-url/releases/tag/v4.1) of this workflow.
 
 # Introduction
 
@@ -16,33 +16,61 @@ In the workflow configuration choose:
 - whether you wish to mute the sound effect when adding a new link (uncheck the relevant box);
 - whether you want to open a found link in a Firefox private window (check the relevant box).
 
-# Usage—saving URLs
+# Usage
 
-Using your Universal Action hotkey on a selected URL, select `Save URL to links file` from the list and press ⏎. You will then be prompted for a description of the URL (which may be a useful reminder). Type the description (or accept or amend the description if you have checked the configuration for the workflow to attempt to complete the description from the web page title) and press ⏎. If you are using a plain text `Links` file you can leave the description blank by simply pressing ⏎. If you are using a markdown `Links` file you must complete the description. The result will be a file which you can open in your default file editor.
+## Saving URLs
 
-# Usage—opening and clearing the Links file
+Using your Universal Action hotkey on a selected URL, select `Save URL to links file` from the list and press <kbd>⏎</kbd>:
 
-If you type the keyword (selected in the workflow configuration) to open the Links file:
-- the Links file will open in your default file editor (and the editor selected may depend, of course, on whether you have chosen to save in markdown or plain text);
-- you can hold down ⌘ while pressing ⏎ to create a *new* links file in your chosen format (effectively deleting any URLs you have previously saved to the file).
+<img width="764" alt="SaveURL" src="https://github.com/Stephen-Lon/Alfred-workflow-save-ur-url/assets/111967061/c2c1849a-451e-4ee1-8cb4-f2f9d9912416">
 
-# Usage—viewing and opening saved links
-## Warning
-There is no error trapping if in this configuration you set the option to view URLs in a Firefox private window when you don't have the Firefox app...but then you wouldn't do that, would you? 😀
+You will then be prompted for a description of the URL (which may be a useful reminder). Type the description (or accept or amend the description if you have checked the configuration for the workflow to attempt to complete the description from the web page title) and press <kbd>⏎</kbd>. If you are using a plain text `Links` file you can leave the description blank by simply pressing <kbd>⏎</kbd>. If you are using a markdown `Links` file you must complete the description:
 
-## Searching URLs in a Links file
-The search is a case insensitive search for a word which occurs in a saved *URL*—*not* for a word in any *description* of a URL that you have saved. Simply type your search keyword and the relevant URLs will display in Alfred's window. (If you want to display all of your saved URLs type `ht`.) Press ⏎ to display the first or any selected URL in your chosen browser (or press Alfred's shortcut key to display the relevant URL in your chosen browser).
+<img width="764" alt="MDTitlePrompt" src="https://github.com/Stephen-Lon/Alfred-workflow-save-ur-url/assets/111967061/a1f1854c-70aa-4209-a5f5-e9240af82c1c">
+
+The result will be a file which you can open in Alfred's Text View (see below for examples).
+
+## Viewing, editing and clearing the `Links` file
+
+Type the keyword (selected in the workflow configuration) to open the `Links` file then:
+- press <kbd>⏎</kbd> to open the Links file in Alfred's Text View from where it may be viewed or edited; or
+- press <kbd>⌘</kbd><kbd>⏎</kbd> to create a *new* links file in your chosen format (effectively deleting any URLs you have previously saved to the file).
+
+If you choose to view the `Links` file this is what it looks like in plain text:
+
+<img width="764" alt="ViewPlainLinks" src="https://github.com/Stephen-Lon/Alfred-workflow-save-ur-url/assets/111967061/400bcbf9-b5c6-4a74-9f59-dd942c5b2e80">
+
+This is what it looks like if you choose to use markdown:
+
+<img width="764" alt="ViewMDLinks" src="https://github.com/Stephen-Lon/Alfred-workflow-save-ur-url/assets/111967061/e75bccaf-e56c-4018-a983-82f2041f31bb">
+
+In both cases the prompts at the bottom of the window are the same:
+- press <kbd>⌘</kbd><kbd>⏎</kbd> to edit the Links file (see below);
+- press <kbd>⌘</kbd><kbd>0</kbd> to toggle the size of the Text View window if necessary;
+- press <kbd>esc</kbd> to end the workflow.
+
+Selecting the option to edit the `Links` file will:
+- if you have used markdown open the file in your default markdown editor;
+- if you have used plain text open the file in Alfred's editable Text View window (from which you can choose to save changes or exit the workflow without saving changes—see the prompts at the bottom of the Text View window when in edit mode).
+
+## Searching URLs in a `Links` file
+The search is a case insensitive search for a word which occurs in a saved *URL*—*not* for a word in any *description* of a URL that you have saved. Simply type your search keyword and the relevant URLs will display in Alfred's window. (If you want to display all of your saved URLs type `ht`.) Press <kbd>⏎</kbd> to display the first or any selected URL in your chosen browser (or press Alfred's shortcut key—<kbd>⌘</kbd><kbd>2</kbd>, <kbd>⌘</kbd><kbd>3</kbd>, etc.—to display the relevant URL in your chosen browser). Here is an example of a search result:
+
+<img width="764" alt="SearchLinks" src="https://github.com/Stephen-Lon/Alfred-workflow-save-ur-url/assets/111967061/c38767a0-5ee1-4514-a76d-5f4cb105c88a">
 
 You will be warned if:
 - the `Links` file does not exist; or
 - your search term is not found.
 
-## Configuration options
+# Configuration options
 As mentioned above you can choose (among others):
 - The keyword you wish to use to trigger a search of the `Links` file (the default is `flinks`—for "find links").
 - Whether you wish the selected URL to open in your default browser or (if you use Firefox) in a Firefox private window.
 
-# Usage—extracting web page titles for description field
+**Warning**  
+There is no error trapping if in the configuration you set the option to view URLs in a Firefox private window when you don't have the Firefox app...but then you wouldn't do that, would you? 😀
+
+## Extracting web page titles for description field
 
 **Note**: Be aware this feature can on occasion, and with some websites, lead to strange results. However if and when it does you can easily overwrite the description field with your own text.
 
